@@ -45,10 +45,19 @@ a{
 
 .container{
     padding: 0 80px;
+    padding-top: 80px;
 }
 .background-color{
     width: 100%;
     background-color: #FFF2F1;
+}
+header{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  padding: 0 80px;
 }
 header .navs-wrapper{
     display: flex;
@@ -87,6 +96,65 @@ header .icons li a{
     width: 26px;
     height: 26px;
     display: block;
+}
+
+.top-btn{
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  width: 55px;
+  height: 55px;
+  background-color: #FFF2F1;
+  color: #000;
+  font-size: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  z-index: 99;
+  display: none;
+  cursor: pointer;
+}
+
+/********* sub-menu **********/
+/* .sub-navs-wrapper{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 999;
+} */
+
+.sub-navs-bar{
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 350px;
+  display: none;
+}
+.sub-navs-bar.active{
+  display: block;
+}
+
+.sub-navs{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+  display: none;
+}
+.sub-navs.active{
+  display: block;
+}
+
+
+.sub-navs .sub-menu a{
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  line-height: 3;
+}
+.sub-navs .sub-menu a:hover{
+  border-bottom: 1px solid #000;
 }
 
 /************* swiper **************/
