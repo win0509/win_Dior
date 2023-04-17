@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dior</title>
     <link rel="stylesheet" href="dior.css">
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="diorjq.js"></script>
+
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    
+    <!-- AWESOME FONT LINK -->
+    <script src="https://kit.fontawesome.com/8f976a5b78.js" crossorigin="anonymous"></script>
+</head>
     
 </head>
 <body>
@@ -18,12 +24,12 @@
         <div class="navs-wrapper">
             <h2 class="logo">DIOR</h2>
             <ul class="navs">
-                <li><a href="#">패션</a></li>
-                <li><a href="#">액세서리</a></li>
-                <li><a href="#">향수</a></li>
-                <li><a href="#">뷰티</a></li>
-                <li><a href="#">패션쇼</a></li>
-                <li><a href="#">디올소개</a></li>
+                <li class="sub-button" data-tab="tab-1"><a href="#">패션</a></li>
+                <li class="sub-button" data-tab="tab-2"><a href="#">액세서리</a></li>
+                <li class="sub-button" data-tab="tab-3"><a href="#">향수</a></li>
+                <li class="sub-button" data-tab="tab-4"><a href="#">뷰티</a></li>
+                <li class="sub-button" data-tab="tab-5"><a href="#">패션쇼</a></li>
+                <li class="sub-button" data-tab="tab-6"><a href="#">디올소개</a></li>
             </ul>
             <ul class="icons">
                 <li><a href="#"><img src="img/icon-1.svg" alt=""></a></li>
@@ -33,7 +39,56 @@
         </div>
         </header>
 
+        <div class="sub-navs-wrapper">
+        <div class="sub-navs-bar">
+            <ul class="sub-navs" id="tab-1">
+                <li class="sub-menu"><a href="#">핸드백</a></li>
+                <li class="sub-menu"><a href="#">의류</a></li>
+                <li class="sub-menu"><a href="#">슈즈</a></li>
+                <li class="sub-menu"><a href="#">패션주얼리</a></li>
+                <li class="sub-menu"><a href="#">2023 봄-여름 컬렉션</a></li>
+                <li class="sub-menu"><a href="#">Dior Or</a></li>
+            </ul>
+        
+
+            <ul class="sub-navs" id="tab-2">
+                <li class="sub-menu"><a href="#">패션 주얼리 & 커프 링크스</a></li>
+                <li class="sub-menu"><a href="#">넥타이 & 포켓 스퀘어</a></li>
+                <li class="sub-menu"><a href="#">벨트</a></li>
+                <li class="sub-menu"><a href="#">선글라스</a></li>
+                <li class="sub-menu"><a href="#">키링</a></li>
+                <li class="sub-menu"><a href="#">라이프 스타일</a></li>
+            </ul>
+
+            <ul class="sub-navs" id="tab-3">
+                <li class="sub-menu"><a href="#">여성 향수</a></li>
+                <li class="sub-menu"><a href="#">남성 향수</a></li>
+                <li class="sub-menu"><a href="#">라 콜렉시옹 프리베 크리스찬 디올</a></li>
+            </ul>
+
+            <ul class="sub-navs" id="tab-4">
+                <li class="sub-menu"><a href="#">메이크업</a></li>
+                <li class="sub-menu"><a href="#">스킨케어</a></li>
+                <li class="sub-menu"><a href="#">디올 스파</a></li>
+            </ul>
+
+            <ul class="sub-navs" id="tab-5">
+                <li class="sub-menu"><a href="#">여성 레디 투 웨어 패션쇼</a></li>
+                <li class="sub-menu"><a href="#">여성 오뜨 꾸뛰르 패션쇼</a></li>
+                <li class="sub-menu"><a href="#">남성 레디 투 웨어 패션쇼</a></li>
+            </ul>
+
+            <ul class="sub-navs" id="tab-6">
+                <li class="sub-menu"><a href="#">디올 히스토리</a></li>
+                <li class="sub-menu"><a href="#">디올의 직업세계</a></li>
+                <li class="sub-menu"><a href="#">뉴스</a></li>
+                <li class="sub-menu"><a href="#">DIOR & SCIENCE</a></li>
+            </ul>
+        </div>
+    </div>
+
       
+        <div class="top-btn"><i class="fa-solid fa-caret-up"></i></div>
     <!-------------- swiper ----------------->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -56,32 +111,32 @@
           <div class="swiper-slide">
             <div class="slide-img"><img src="img/capture-10.webp" alt=""></div>
             <div class="slide-txt">
-                <p>향수</p>
-                <span>라 콜렉시옹 프리베 크리스챤</span>
+                <p>스킨케어</p>
+                <span>NEW 디올 르 밤</span>
                 <div class="slide-btn">Show now</div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-img"><img src="img/slide-2.avif" alt=""></div>
             <div class="slide-txt">
-                <p>향수</p>
-                <span>라 콜렉시옹 프리베 크리스챤</span>
+                <p>가방</p>
+                <span>탑 핸들백 & 숄더백</span>
                 <div class="slide-btn">Show now</div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-img"><img src="img/capture-9.webp" alt=""></div>
             <div class="slide-txt">
-                <p>향수</p>
-                <span>라 콜렉시옹 프리베 크리스챤</span>
+                <p>여성 향수</p>
+                <span>쟈도르 어도러블</span>
                 <div class="slide-btn">Show now</div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-img"><img src="img/capture-7.jpeg" alt=""></div>
             <div class="slide-txt">
-                <p>향수</p>
-                <span>라 콜렉시옹 프리베 크리스챤</span>
+                <p>WHAT's NEW</p>
+                <span>2023 봄 여름 컬렉션</span>
                 <div class="slide-btn">Show now</div>
             </div>
           </div>
@@ -114,7 +169,7 @@
             <div class="keyword-right">
                 <div class="keyword-more  keyword-more-right">
                     <p>디올 어딕트 디올이 선사하는 놀라운 반짝임</p>
-                    <dir class="more-btn"><span>more</span></dir>
+                    <div class="more-btn"><span>more</span></div>
                 </div>
                 <div class="keyword-right-txt">
                     <p class="right-txt">디올 어딕트<br> 디올이 선사하는 놀라운 반짝임</p>
@@ -266,7 +321,8 @@
     
       
 
-  
+    <script src="dior.js"></script>
+    
      <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -286,6 +342,9 @@
         
       },
     });
+
+
+
   </script>
 
   
